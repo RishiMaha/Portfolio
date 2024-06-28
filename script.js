@@ -3,6 +3,8 @@
 console.log("Hello world");
 const nav = document.querySelector(".nav");
 
+
+
 //website loop
 let websiteLoop = setInterval(() => {
   const scrollTop = document.querySelector("html").scrollTop;
@@ -14,28 +16,28 @@ let websiteLoop = setInterval(() => {
 }, 3);
 const projects = [
   {
-    link: "https://www.youtube.com/watch?v=Y7WrLGbOVqw",
-    image: "hero.jpg",
+    link: "https://github.com/RishiMaha/NBA-MVP-Predictor-",
+    image: "NBA.png",
     openInNewTab: true,
-    title: "ShotChain - Video Demo",
+    title: "NBA Machine Learning",
     description:
-      "ShotChain is an original Web3 project created in 4 days during the Starknet Hacker House in Denver. It was the number 1 ranked finalist and had the opportunity to present infront of Starkware executives. Developed with React, Tailwind, MongoDB, and Cairo",
+      "This project utilizes web scraping, data cleaning, and machine learning to make predictions on the NBA MVP from the 1999-00 season till the 2023-24 season",
   },
   {
-    link: "https://otcrconsulting.com/",
-    image: "hero.jpg",
+    link: "https://github.com/RishiMaha/Python-Nike-Web-Scraping",
+    image: "Nike.png",
     openInNewTab: true,
-    title: "OTCR Consulting Website",
+    title: "Nike Web-Scraping",
     description:
-      "This website was made as an outreach tool for OTCR Consulting to promote the firm's services and attract student consultants. Developed with Wordpress",
+      "This project was made to monitor the price of Nike's Air Force 01 shoe and utilizes web-scraping to notify if they price drops to a desired amount",
   },
   {
-    link: "/capIndex.html",
-    image: "hero.jpg",
+    link: "https://github.com/RishiMaha/RStudio-Airplane-Analysis",
+    image: "Airport.png",
     openInNewTab: true,
-    title: "Market Capper",
+    title: "Airport Data Analysis in R",
     description:
-      "A finance trivia game that uses dynamic webscraping. Developed with JS/CSS/HTML and Python for the CS124 Honors project",
+      "This project utilizes data cleaning and analysis in RStudio to find the best time to fly out of Chicago O'hare International Airport",
   },
 ];
 const projectHTML = document.querySelector(".projects_content");
@@ -93,3 +95,5 @@ function displayProjects() {
     projectHTML.insertAdjacentHTML("beforeend", html);
   }
 }
+
+
